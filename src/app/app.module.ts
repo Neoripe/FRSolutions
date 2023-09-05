@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ProductosComponent } from './productos/productos.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,20 @@ import { ProductosComponent } from './productos/productos.component';
     NavbarComponent,
     FooterComponent,
     ServiciosComponent,
-    ProductosComponent
+    ProductosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    RouterModule.forRoot([
+      {path:'', component:HomeComponent},
+      {path:'servicios', component:ServiciosComponent},
+      {path:'productos', component:ProductosComponent},
+      {path:'contacto', component:ContactoComponent},
+      {path:'**', redirectTo:'/', pathMatch:'full'}
+      
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
