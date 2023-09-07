@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ProductosComponent } from './productos/productos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { CommingsoonComponent } from './commingsoon/commingsoon.component';
 
 @NgModule({
   declarations: [
@@ -20,15 +21,16 @@ import { ContactoComponent } from './contacto/contacto.component';
     FooterComponent,
     ServiciosComponent,
     ProductosComponent,
-    ContactoComponent
+    ContactoComponent,
+    CommingsoonComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     RouterModule.forRoot([
       {path:'', component:HomeComponent},
-      {path:'servicios', component:ServiciosComponent},
-      {path:'productos', component:ProductosComponent},
+      {path:'servicios', component:CommingsoonComponent},
+      {path:'productos', component:CommingsoonComponent},
       {path:'contacto', component:ContactoComponent},
       {path:'**', redirectTo:'/', pathMatch:'full'}
       
