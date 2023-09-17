@@ -1,44 +1,39 @@
-<div class="container">
-	<div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="well well-sm">
-          <form class="form-horizontal" action="" method="post">
-          <fieldset>
-            <legend class="text-center">Contact us</legend>
-    
-            <!-- Name input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Name</label>
-              <div class="col-md-9">
-                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-              </div>
-            </div>
-    
-            <!-- Email input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="email">Your E-mail</label>
-              <div class="col-md-9">
-                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-              </div>
-            </div>
-    
-            <!-- Message body -->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="message">Your message</label>
-              <div class="col-md-9">
-                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-              </div>
-            </div>
-    
-            <!-- Form actions -->
-            <div class="form-group">
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-              </div>
-            </div>
-          </fieldset>
-          </form>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div [formGroup]="form" class="container contact-form">
+  <div class="contact-image">
+    <img src="../../assets/contact/img/mail.png" alt="mail_contact" />
+  </div>
+  <form action="javascript:void(0)" (submit)="send()">
+    <h3>Contactenos</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input formControlName="from_name" type="text" name="txtName" class="form-control" placeholder="Nombre *"
+           />
         </div>
+        <div class="form-group">
+          <input formControlName="from_email" type="text" name="txtEmail" class="form-control" placeholder="Email *"
+             />
+        </div>
+        <div class="form-group">
+          <!--<re-captcha (resolved)="resolved($event)" siteKey="6LeBfy4oAAAAAAnEqNHBDXQth0saYb2t86ARjnzX"></re-captcha>-->
+          <re-captcha formControlName="captcha" (resolved)="resolved($event)" siteKey="6LeBfy4oAAAAAAnEqNHBDXQth0saYb2t86ARjnzX"></re-captcha>
+        </div>
+        <div class="form-group" [hidden]="!validado">
+          <!--<input type="submit" [hidden]="form.invalid" name="btnSubmit" class="btnContact" value="Enviar" />-->
+          <button type="submit" [disabled]="form.invalid" name="btnSubmit" class="btn btn-danger" style="width: 100%;height: 100%;">Enviar</button>
+        </div>
+      </div>      
+      <div class="col-md-6">
+        <div class="form-group">
+          <textarea formControlName="message" name="txtMsg" class="form-control" placeholder="Mensaje *"
+            style="width: 100%; height: 250px;">
+                  </textarea>
+        </div>        
       </div>
-	</div>
+    </div>
+  </form>  
 </div>

@@ -12,6 +12,8 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { ProductosComponent } from './productos/productos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { CommingsoonComponent } from './commingsoon/commingsoon.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {RecaptchaModule} from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { CommingsoonComponent } from './commingsoon/commingsoon.component';
   imports: [
     BrowserModule,
     NgbModule,
+    ReactiveFormsModule,
+    RecaptchaModule,
     RouterModule.forRoot([
       {path:'', component:HomeComponent},
       {path:'servicios', component:CommingsoonComponent},
