@@ -1,280 +1,136 @@
-<main>
-    <h1 class="visually-hidden">Features examples</h1>
-  
-    <div class="container px-4 py-5" id="featured-3">
-      <h2 class="pb-2 border-bottom">Servicios industriales</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Drives</h3>
-          <p>Diseño parametrizacion y configuracion de drives.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Plc</h3>
-          <p>Ingenieria y programacion de plc.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
-        </div>
-        <div class="feature col">
-          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
-          </div>
-          <h3 class="fs-2 text-body-emphasis">Scada</h3>
-          <p>Desarrollos de scada de planta y vinculacion con sistemas de gestion de la propia empresa</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
-        </div>
-      </div>
+<!-- box icons-->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<!-- custom css-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<section class="about" id="automatismo">
+  <div class="img" data-aos="fade-right" data-aos-duration="2000">
+    <img src="https://1000marcas.net/wp-content/uploads/2019/12/Siemens-Logo.png" alt="" style="border-radius: 2rem;"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/SEW_LOGO.svg/1200px-SEW_LOGO.svg.png" alt="" style="border-radius: 2rem;"> 
+    <img src="https://logos-world.net/wp-content/uploads/2023/02/Schneider-Electric-Logo.png" alt="" style="border-radius: 2rem;"> 
+    <img src="https://logos-download.com/wp-content/uploads/2019/11/Allen_Bradley_Logo.png" alt="" style="border-radius: 2rem;">>
+</div>
+<div class="about-content" data-aos="fade-left" data-aos-duration="2000">
+    <h2 class="heading" data-aos="fade-down" data-aos-duration="2000">Automatismo industrial <span> y Motion control</span></h2>
+
+    <p style="font-size: 20px;">Soluciones integrales de automatización industrial y control avanzado, centradas en la programación, 
+      configuración y optimización de sistemas compuestos por PLC / HMI / Variable-Frequency Drives / Computer Vision.
+    </p>        
+    <h2 id="asesoria">Respecto al control industrial, nos enfocamos en lo siguiente:</h2> 
+    <br>
+    <h3>	<span>Asesoramiento en la ingeniería de los procesos a controlar</span></h3>
+    <p>En caso de requerirlo, con el fin de encontrar la mejor solución a la problemática propuesta por nuestros clientes, nos involucramos en la planificación y el desarrollo de la ingeniería del proyecto.
+      Contamos con experiencia en el dimensionamiento de motores eléctricos, cajas reductoras y variadores de frecuencia, según el trabajo mecánico que deben realizar y el sistema físico en que se encuentran.
+      Y como la cuestión eléctrica no es ajena, asesoramos en lo relacionado al diseño y conexionado de los tableros eléctricos del proyecto.
+    </p>
+    <br>
+    <h3><span>Programación de PLC y HMI</span></h3>
+    <p>Controlamos máquinas/procesos mediante la programación de controladores lógicos (PLC) y diseño de interfaces de usuario (HMI). Interacción con entradas/salidas digitales y analógicas y comunicación por bus de campo con los distintos periféricos distribuidos en la red.
+      Programamos las líneas de PLC y HMI de las siguientes marcas: SIEMENS, Schneider, SEW-Eurodrive, Weintek y Delta.      
+    </p>
+    <br>
+    <h3><span>Motion control & Kinematics</span></h3>
+    <p>Mediante la parametrización y programación de variadores de frecuencia (variable-frequency drives) realizamos el control de movimiento de motores de alterna (accionamientos trifásicos asincrónicos).
+      Y con servotecnología, también controlamos procesos altamente dinámicos mediante servos de alterna (accionamientos trifásicos sincrónicos).
+      Desde la simpleza del movimiento de un transporte a rodillos hasta una leva electrónica, control de torque o un sincronismo de 2 o más ejes, todo es posible de mover según lo requerido por la mecánica de la aplicación. 
+      Con la ayuda de la kinemática, resolvemos el movimiento complejo de la herramienta móvil (en el plano 2D o el espacio 3D) de un robot mecánico (gantry robots, roller gantries, scara robots, etc.). 
+      ¡Muéstrenos el mecanismo y nosotros le daremos vida!      
+    </p>
+    <br>
+    <h3><span>Computer Vision - Visión Artificial</span></h3>
+    <p>En la industria, es cada vez más común el uso de visión artificial para inferir comportamiento sobre el control de la máquina/proceso y/o para realizar un control de calidad sobre los productos obtenidos.
+      Proveemos el equipamiento y la lógica necesaria para poder detectar objetos y enviar los datos para ser analizados por el controlador lógico o el sistema de gestión de su empresa.
+      Desde las dimensiones incorrectas de una plancha de cartón mal cortada hasta la detección de una persona en un área restringida, es factible de detectar, tanto para tomar decisiones dentro de una lógica como para reportar incidencias.       
+    </p>
+    
+</div>
+</section>
+
+<section class="scada" id="scada">
+  <div class="scada-content" data-aos="fade-left" data-aos-duration="2000">
+    <h2 class="heading" data-aos="fade-down" data-aos-duration="2000">Sistemas<span> Scada</span></h2>
+    <div class="img" data-aos="fade-right" data-aos-duration="2000">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsr8IobX3NzXX4iTgYM4QQ5bjAp7Qrbq0IHM0yk19QYrq7AVkmkYQviJe1-bJAv81jU4&usqp=CAU" alt="" style="border-radius: 2rem;"> 
+      <img src="https://www.udep.edu.pe/labsac/wp-content/uploads/sites/85/2023/03/soft7.png" alt="" style="border-radius: 2rem;"> 
+      <img src="https://descomip.com/DESCOM2/wp-content/uploads/2015/02/wonderware-intouch.jpg" alt="" style="border-radius: 2rem;">
     </div>
-  
-    <div class="b-example-divider"></div>
-  
-    <div class="container px-4 py-5" id="hanging-icons">
-      <h2 class="pb-2 border-bottom">Virtualizacion</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Vmware</h3>
-            <p>Instalacion de sistemas de virtualizacion VMWARE.</p>
-            <a href="#" class="btn btn-primary">
-              Primary button
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Citrix</h3>
-            <p>Instalacion de sistemas de virtualizacion en base a tecnologia citrix.</p>
-            <a href="#" class="btn btn-primary">
-              Primary button
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
-          </div>
-          <div>
-            <h3 class="fs-2 text-body-emphasis">Implementacion HA</h3>
-            <p>Implementa de la funcionalidad alta disponibilidad tanto en sistemas VMware como Citrix.</p>
-            <a href="#" class="btn btn-primary">
-              Primary button
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="scada-content">
+    <p style="font-size: 20px;">Soluciones industriales
+      Desarrollo y puesta en marcha de sistemas SCADA. ¡Lleve su control de procesos industriales al siguiente nivel de la Industria 4.0!
+      Si bien los sistemas SCADA llevan más de dos décadas implementándose, con el auge de la Industria 4.0, se hace cada vez más importante contar con este tipo de sistemas centralizados, que permiten ver en tiempo real cada etapa del proceso productivo de la planta.
+      Uno de los pilares de la Industria 4.0 son los datos. Con un SCADA implementado, es posible acceder en tiempo real a los datos de toda la planta, desde cada proceso productivo que la compone (cantidad de producto por minuto, por ejemplo), cada máquina/automatismo que trabaja (horas de producción, por ejemplo), hasta la mínima unidad de un dispositivo de campo (un sensor inductivo, por ejemplo).
+      Con estos datos, no sólo se puede acceder a la visualización total de los procesos, sino que se pueden usar para realizar mantenimiento predictivo de los equipos, mejorar tiempos de producción, ver tiempos de parada, promediar la cadencia de las máquinas por jornada, etc.
+      El desarrollo se lleva a cabo en la plataforma Ignition®, de Inductive Automation. Es un potente SCADA que puede correr tanto en sistemas operativos Windows® como Linux.
+      No solamente desarrollamos en la plataforma, sino que además asesoramos en el hardware necesario (servidores, redes), y dejamos listo y configurado el servidor en caso de requerirlo (llave en mano).
+      La configuración del servidor consta de la instalación del sistema operativo, instalación de la base de datos, configuración de RAID de discos, configuración de backups periódicos en NAS y replicación de la base de datos, etc. De esa manera, se minimiza la pérdida de datos ante un evento fortuito, protegiendo la información del sistema.      
+    </p>                      
+    <h2><span>Con un sistema SCADA en producción se puede lograr:</span></h2>    
+    <p> <i class='bx bxs-check-circle'></i> Visualización y control de todo el proceso productivo para los operadores y supervisión para los mandos superiores</p>
+    <p> <i class='bx bxs-check-circle'></i> Acceso a cada dato del proceso en tiempo real</p>
+    <p> <i class='bx bxs-check-circle'></i> Comunicación con cada PLC de la planta, ya que trabaja con los estándares de buses de campo de la industria (PROFINET, Profibus DP, Ethernet/IP, Modbus TCP, MQTT, etc.)</p>
+    <p> <i class='bx bxs-check-circle'></i> Historizar datos y mostrar las curvas y gráficas correspondientes</p>
+    <p> <i class='bx bxs-check-circle'></i> Realizar cómputos (mediante las fórmulas del proceso) y mostrarlos/graficarlos</p>
+    <p> <i class='bx bxs-check-circle'></i> Compartir los datos y realizar consultas a la base de datos desde el Sistema de Gestión/ERP de la empresa</p>
+    <p> <i class='bx bxs-check-circle'></i> Crear alarmas de advertencia/falla y enviarlas por correo electrónico/SMS/Telegram®</p>
+    <p> <i class='bx bxs-check-circle'></i> Realizar reportes, con la posibilidad de programar el envío por correo electrónico (diario, anual, mensual, por ejemplo)</p>
+    <p> <i class='bx bxs-check-circle'></i> Dado que es un sistema web, se puede controlar desde cualquier PC/Tablet dentro de la red empresarial, sin necesidad de instalar software extra</p>
+    <p> <i class='bx bxs-check-circle'></i> Posibilidad de acceso remoto, mediante una VPN empresarial (¡incluso se puede adaptar el SCADA para verlo desde un teléfono celular!)</p>
+  </div>
+</div>
+</section>
+
+<section class="redes" id="redes">
+  <div class="redes-content" data-aos="fade-left" data-aos-duration="2000">
+    <h2 class="heading" data-aos="fade-down" data-aos-duration="2000"> Redes de datos y <span> virtualización de servidores </span></h2>
+
+    <p>Redes de datos y configuración e implementación de firewalls. Virtualización de servidores.
+      Redes de datos y configuración e implementación de firewalls.
+      ¿Quiere organizar la red IP de su empresa? ¿La dirección IP de un PLC de planta está en la misma red que la dirección IP 
+      de una PC de Administración? ¿Desea comunicarse con su empresa remotamente de forma segura? 
+      ¿Necesita controlar el tráfico de los colaboradores que utilizan el Wifi? ¿Quiere aumentar la seguridad de la intranet de su empresa?</p>    
+    <div style="text-align: left;">
+      <h3> <span>Para ello, y para atender otras problemáticas, ofrecemos los siguientes servicios:</span></h3>      
+      <div>
+      <p> <i class='bx bxs-check-circle'></i> Planificación e ingeniería de infraestructuras de redes de datos intranet, del tipo “small business”</p>
+      <p> <i class='bx bxs-check-circle'></i> Configuración de switchs administrables y routers (access lists, filtrado MAC, static / dynamic routing, VLAN, trunking, DHCP, NAT y VPN)</p>
+      <p> <i class='bx bxs-check-circle'></i> Puesta en marcha de WLAN</p>
+      <p> <i class='bx bxs-check-circle'></i> Experiencia en equipamiento Cisco, Linksys, Ubiquiti y Mikrotik</p>
+      <p> <i class='bx bxs-check-circle'></i> Puesta en marcha y administración de firewalls pfSense y OPNsense</p>
     </div>
-  
-    <div class="b-example-divider"></div>
-  
-    <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Redes</h2>
-  
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Diseño de redes</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                  <small>Earth</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                  <small>3d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Implementaciond y configuracion de distintos equipos</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Configuracion de firewalls tipo pfsense y fortinet</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                  <small>5d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  
-    <div class="b-example-divider"></div>
-  
-    <!--<div class="container px-4 py-5" id="icon-grid">
-      <h2 class="pb-2 border-bottom">Icon grid</h2>
-  
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-            <p>Paragraph of text beneath the heading to explain the heading.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="b-example-divider"></div>
-  
-    <div class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Features with title</h2>
-  
-      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-        <div class="col d-flex flex-column align-items-start gap-2">
-          <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2>
-          <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-        </div>
-  
-        <div class="col">
-          <div class="row row-cols-1 row-cols-sm-2 g-4">
-            <div class="col d-flex flex-column gap-2">
-              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#collection" />
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-  
-            <div class="col d-flex flex-column gap-2">
-              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#gear-fill" />
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-  
-            <div class="col d-flex flex-column gap-2">
-              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#speedometer" />
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-  
-            <div class="col d-flex flex-column gap-2">
-              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#table" />
-                </svg>
-              </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
-              <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
-  </main>
+    <h3><span>Virtualización</span></h3>
+    <p>Con la virtualización se logran optimizar los recursos de hardware de un servidor. En lugar de tener varios servidores físicos realizando tareas puntuales (muchas veces desperdiciando los recursos de hardware de cada uno de ellos), se pueden tener los mismos virtualizados en uno solo físico.
+      Por ejemplo, se pueden colocar un servidor de correos, un servidor web, un servidor de base de datos, un sistema ERP y un sistema SCADA, todos virtualizados en el mismo servidor físico, conservando su independencia.
+      Esto ahorra costes importantes de inversión inicial de hardware, mantenimiento y consumo eléctrico. Además, optimiza los recursos de hardware, pues se pueden administrar los recursos de cada servidor virtual de modo de asignarle a cada uno lo que necesita para su correcto desempeño.
+      Para virtualizar, contamos con las herramientas VMware®, Citrix® y Proxmox®.
+      Creamos, configuramos y administramos las máquinas virtuales que su empresa necesita. ¿Le queda alguna duda? ¡Consúltenos!
+      </p>
+    <div>
+      <img src="data:image/png;base64,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" alt="" data-aos="fade-right" data-aos-duration="2000">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/citrix-logo-png-transparent.png" alt="" data-aos="fade-up" data-aos-duration="2000">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyQbFS92JeVuGDc3XU1wWKB7MqIoThditEoI4q5XFWOihnBq1kyPhT9miYvpyQ1qUZzKs&usqp=CAU" alt="" data-aos="fade-left" data-aos-duration="2000">
+  </div>
+  </div>
+</section>
+
+<section class="desarrollo" id="desarrollo">
+  <div class="desarrollo-content" data-aos="fade-left" data-aos-duration="2000">
+  <h3 data-aos="fade-right" data-aos-duration="2000" style="text-align: center;">Software a <span>medida</span></h3>
+  <p>Programación de software a medida (de escritorio, web y apps mobile), diseñado específicamente para satisfacer las necesidades de cada cliente. Desde sistemas básicos a estructuras complejas.
+    Nos encargamos del diseño y la programación de aplicaciones del tipo:</p>
+
+    <li><span>Escritorio (Desktop). Son las que se instalan y ejecutan en cada PC de usuario</span></li>
+    <li><span>Web. Se crea la aplicación en una PC servidor (en la red local o en la nube) y cada cliente la ejecuta desde el navegador (browser) de su PC, sin necesidad de instalarla.</span></li>
+    <li><span>Mobile. Aplicaciones para teléfonos celulares/tablets.</span></li>
+    
+    <p data-aos="fade-down" data-aos-duration="2000">Realizamos la codificación completa del proyecto, tanto del backend como del frontend, utilizando los frameworks de desarrollo actualmente vigentes del mercado.
+    Desde proyectos relacionados a la gestión administrativa de una empresa hasta los relacionados con electrónica de control, si tiene una idea acérquela… ¡y la materializamos en la memoria RAM! 
+    </p>
+  </div>
+  <div>
+    <img src="data:image/jpeg;base64,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" alt="" data-aos="fade-right" data-aos-duration="1500">
+    <img src="../../assets/home/img/pegasus.jpg" alt="" data-aos="fade-up" data-aos-duration="2000">
+  </div>
+
+</section>

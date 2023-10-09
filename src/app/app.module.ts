@@ -14,6 +14,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { CommingsoonComponent } from './commingsoon/commingsoon.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {RecaptchaModule} from 'ng-recaptcha';
+import {NgxTypedJsModule} from 'ngx-typed-js';
+
 
 @NgModule({
   declarations: [
@@ -29,11 +31,12 @@ import {RecaptchaModule} from 'ng-recaptcha';
   imports: [
     BrowserModule,
     NgbModule,
-    ReactiveFormsModule,
+    NgxTypedJsModule,    
+    ReactiveFormsModule,    
     RecaptchaModule,
     RouterModule.forRoot([
       {path:'', component:HomeComponent},
-      {path:'servicios', component:CommingsoonComponent},
+      {path:'servicios', component:ServiciosComponent},
       {path:'productos', component:CommingsoonComponent},
       {path:'contacto', component:ContactoComponent},
       {path:'**', redirectTo:'/', pathMatch:'full'}
