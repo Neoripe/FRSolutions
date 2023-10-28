@@ -32,13 +32,11 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
     BrowserModule,
     NgbModule,
     NgxTypedJsModule,    
-    ReactiveFormsModule,    
+    ReactiveFormsModule,        
     RecaptchaModule,
     RouterModule.forRoot([
       {path:'', component:HomeComponent},
-      {path:'servicios', component:ServiciosComponent},
-      {path:'productos', component:CommingsoonComponent},
-      {path:'contacto', component:ContactoComponent},
+      {path:'servicios', component:ServiciosComponent},      
       {path:'**', redirectTo:'/', pathMatch:'full'}
       
     ])

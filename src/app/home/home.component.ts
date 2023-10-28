@@ -56,10 +56,12 @@ export class HomeComponent {
     }
   }
 
+  
 
-  ngOninit(){
+  ngOninit():void{   
+
     const options={
-      strings: ['simples', 'robustas', 'y efectivas'],
+      strings: ['simples', 'robustas', 'efectivas'],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay:1000,
@@ -67,7 +69,12 @@ export class HomeComponent {
       cursorChar: '|',
       loop: true
     }    
-    const typed = new Typed('.multiple-text', options);
+    const typed = new Typed('.multiple-text', options);    
   }
- 
+
+  
+   
 }
+
+
+

@@ -15,9 +15,9 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!--Stylo de la parte de clientes-->
-  <!-- CSS Files 
+  <!-- CSS Files -->
   <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/clients/client-2/assets/css/client-2.css" />-->
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/clients/client-2/assets/css/client-2.css" />
 
 
 </head>
@@ -28,7 +28,7 @@
     <div class="home-content" data-aos="fade-down" data-aos-duration="2000">
       <!--<h3>Hello, its me</h3>-->
       <h1 data-aos="fade-right" data-aos-duration="2000">FRSolutions</h1>   
-      <ngx-typed-js [strings]="['simples', 'robustas', 'y efectivas']" [shuffle]="false" [loop]="true" [typeSpeed]="80">
+      <ngx-typed-js [strings]="['simples', 'robustas', 'efectivas']" [shuffle]="false" [loop]="true" [typeSpeed]="80">
         <h3>Soluciones tecnológicas <span class="typing"></span></h3>        
       </ngx-typed-js>
 
@@ -54,13 +54,13 @@
     </div>
     <div class="about-content" data-aos="fade-left" data-aos-duration="2000">
         <h2 class="heading" data-aos="fade-down" data-aos-duration="2000">Sistemas<span> Scada</span></h2>
-        <p style="font-size: 20px;">Soluciones industriales
+        <p style="font-size: 35px;">Soluciones industriales
         Desarrollo y puesta en marcha de sistemas SCADA. ¡Lleve su control de procesos industriales al siguiente nivel de la Industria 4.0!
-          Si bien los sistemas SCADA llevan más de dos décadas implementándose, con el auge de la Industria 4.0, se hace cada vez más importante contar con este tipo de sistemas centralizados, que permiten ver en tiempo real cada etapa del proceso productivo de la planta.
+          <!--Si bien los sistemas SCADA llevan más de dos décadas implementándose, con el auge de la Industria 4.0, se hace cada vez más importante contar con este tipo de sistemas centralizados, que permiten ver en tiempo real cada etapa del proceso productivo de la planta.
           Uno de los pilares de la Industria 4.0 son los datos. Con un SCADA implementado, es posible acceder en tiempo real a los datos de toda la planta, desde cada proceso productivo que la compone (cantidad de producto por minuto, por ejemplo), cada máquina/automatismo que trabaja (horas de producción, por ejemplo), hasta la mínima unidad de un dispositivo de campo (un sensor inductivo, por ejemplo).
-          Con estos datos, no sólo se puede acceder a la visualización total de los procesos, sino que se pueden usar para realizar mantenimiento predictivo de los equipos, mejorar tiempos de producción, ver tiempos de parada, promediar la cadencia de las máquinas por jornada, etc.
+          Con estos datos, no sólo se puede acceder a la visualización total de los procesos, sino que se pueden usar para realizar mantenimiento predictivo de los equipos, mejorar tiempos de producción, ver tiempos de parada, promediar la cadencia de las máquinas por jornada, etc.-->
         </p>                      
-        <a href="servicios#scada" class="btn">Leer mas</a>
+        <a routerLink="/servicios" fragment="scada" class="btn">Leer mas</a>
         
     </div>
 </section>
@@ -68,41 +68,41 @@
   <!--section de servicios-->
   <section class="services" id="services">
     <h2 class="heading" data-aos="fade-down" data-aos-duration="2000">Automatismo industrial <span>y Motion control </span></h2>
-    <h3>Soluciones integrales de automatización industrial y control avanzado.</h3>
+    <h3 style="font-size: 35px;">Soluciones integrales de automatización industrial y control avanzado.</h3>
     <div class="services-container" data-aos="fade-up" data-aos-duration="2000">
         <div class="services-box">
             <i class="bx bxs-help-circle"></i>
             <h3>Asesoramiento de proyectos </h3>
-            <p>En caso de requerirlo, con el fin de encontrar la mejor solución a la problemática propuesta por nuestros clientes, 
+            <!--<p>En caso de requerirlo, con el fin de encontrar la mejor solución a la problemática propuesta por nuestros clientes, 
               nos involucramos en la planificación y el desarrollo de la ingeniería del proyecto.
               Aportando soluciones basandonos en el contexto de nuestros clientes.
-            </p>
-            <a href="servicios#asesoria" class="btn">Leer mas</a>            
+            </p>-->
+            <a routerLink="/servicios" fragment="asesoria" class="btn">Leer mas</a>            
         </div>
         <div class="services-box">
             <i class='bx bxs-microchip'></i>
             <h3>Programación de PLC y HMI</h3>
-            <p>Controlamos máquinas/procesos mediante la programación de controladores lógicos (PLC) y 
+            <!--<p>Controlamos máquinas/procesos mediante la programación de controladores lógicos (PLC) y 
               diseño de interfaces de usuario (HMI). Interacción con entradas/salidas digitales y analógicas 
-              y comunicación por bus de campo con los distintos periféricos distribuidos en la red.</p>
-            <a href="servicios#asesoria" class="btn">Leer mas</a>
+              y comunicación por bus de campo con los distintos periféricos distribuidos en la red.</p>-->
+            <a routerLink="/servicios" fragment="asesoria" class="btn">Leer mas</a>
         </div>
         <div class="services-box">
             <i class="bx bx-bar-chart-alt"></i>
             <h3>Motion control & Kinematics</h3>
-            <p>Mediante la parametrización y programación de variadores de frecuencia  
+            <!--<p>Mediante la parametrización y programación de variadores de frecuencia  
               realizamos el control de movimiento de motores de alterna (accionamientos trifásicos asincrónicos).
-              Y con servotecnología, también controlamos procesos altamente dinámicos mediante estos.</p>
-            <a href="servicios#asesoria" class="btn">Leer mas</a>
+              Y con servotecnología, también controlamos procesos altamente dinámicos mediante estos.</p>-->
+            <a routerLink="/servicios" fragment="asesoria" class="btn">Leer mas</a>
         </div>
         <div class="services-box">
           <i class='bx bxs-camera-home'></i>
-          <h3>Computer Vision</h3>
-          <p>Es cada vez más común el uso de visión artificial para inferir comportamiento sobre 
+          <h3>Computer Vision (Visión Artificial)</h3>
+          <!--<p>Es cada vez más común el uso de visión artificial para inferir comportamiento sobre 
             el control del proceso y/o para realizar un control de calidad sobre los productos.
             Proveemos el equipamiento y la lógica necesaria para poder detectar objetos y enviar los datos para ser
-            analizados por el controlador lógico o el sistema de gestión de su empresa.</p>
-          <a href="servicios#asesoria" class="btn">Leer mas</a>
+            analizados por el controlador lógico o el sistema de gestión de su empresa.</p>-->
+          <a routerLink="/servicios" fragment="asesoria" class="btn">Leer mas</a>
       </div>
     </div>
 </section>
@@ -114,35 +114,18 @@
     </div>
     <div class="about-content" data-aos="fade-left" data-aos-duration="2000">
         <h2 class="heading" data-aos="fade-down" data-aos-duration="2000">Redes de datos y <span> virtualización</span></h2>
-        <br>
-        <h3><i class='bx bxs-network-chart' style="color: red;"></i>Redes de datos</h3>
-        <p>Redes de datos y configuración e implementación de firewalls. Virtualización de servidores.
-          Redes de datos y configuración e implementación de firewalls.
-          ¿Quiere organizar la red IP de su empresa? ¿La dirección IP de un PLC de planta está en la misma red que la dirección IP de una PC de Administración? 
-          ¿Desea comunicarse con su empresa remotamente de forma segura? ¿Necesita controlar el tráfico de los colaboradores que utilizan el Wifi? 
-          ¿Quiere aumentar la seguridad de la intranet de su empresa?
-        </p>                      
-        <h3><i class='bx bxs-server' style="color:blue;"></i>Virtualización</h3>
-        <p>Con la virtualización se logran optimizar los recursos de hardware de un servidor. En lugar de tener varios servidores físicos 
-          realizando tareas puntuales (muchas veces desperdiciando los recursos de hardware de cada uno de ellos), se pueden tener los mismos 
-          virtualizados en uno solo físico.</p>
-        <a href="servicios#redes" class="btn">Leer mas</a>
+        <br>        
+        <p style="font-size: 35px;">Redes de datos y configuración e implementación de firewalls. Virtualización de servidores.         
+        </p>                              
+        <a routerLink="/servicios" fragment="redes" class="btn">Leer mas</a>
     </div>
 </section>
 
 <!--Seccion de desarrollos-->
 <section class="desarrollo" id="desarrollo">
   <div class="desarrollo-content" data-aos="fade-left" data-aos-duration="2000">
-  <h3 data-aos="fade-right" data-aos-duration="2000" style="text-align: center;">Software a <span>medida</span></h3> <a href="servicios#desarrollo" class="btn">Leer mas</a>
-  <p>Programación de software a medida (de escritorio, web y apps mobile), diseñado específicamente para satisfacer las necesidades de cada cliente. Desde sistemas básicos a estructuras complejas.
-    Nos encargamos del diseño y la programación de aplicaciones del tipo:</p>
-
-    <li><span>Escritorio (Desktop). Son las que se instalan y ejecutan en cada PC de usuario</span></li>
-    <li><span>Web. Se crea la aplicación en una PC servidor (en la red local o en la nube) y cada cliente la ejecuta desde el navegador (browser) de su PC, sin necesidad de instalarla.</span></li>
-    <li><span>Mobile. Aplicaciones para teléfonos celulares/tablets.</span></li>
-    
-    <p data-aos="fade-down" data-aos-duration="2000">Realizamos la codificación completa del proyecto, tanto del backend como del frontend, utilizando los frameworks de desarrollo actualmente vigentes del mercado.
-    Desde proyectos relacionados a la gestión administrativa de una empresa hasta los relacionados con electrónica de control, si tiene una idea acérquela… ¡y la materializamos en la memoria RAM! 
+  <h3 data-aos="fade-right" data-aos-duration="2000" style="text-align: center;">Software a <span>medida</span></h3> <a routerLink="/servicios" fragment="desarrollo" class="btn">Leer mas</a>
+  <p style="font-size: 35px;">Programación de software a medida (de escritorio, web y apps mobile), diseñado específicamente para satisfacer las necesidades de cada cliente. Desde sistemas básicos a estructuras complejas.
     </p>    
   </div>
   <div>
